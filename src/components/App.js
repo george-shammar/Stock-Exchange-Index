@@ -1,4 +1,5 @@
 import React from 'react';
+import StocksList from '../containers/StocksList';
 
 const App = () => {
   return (
