@@ -7,6 +7,7 @@ const App = () => {
     <div>
       <h2>Favorite Stocks</h2>
       <FavoriteStocks />
+      <hr />
       <h2>All Stock Index</h2>
       <AllStocks />
     </div>
