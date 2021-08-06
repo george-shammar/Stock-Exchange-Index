@@ -11,3 +11,5 @@ const allStocksReducer = (allStocks = initialState, action) => {
         return allStocks;
     }
   }
+
+  export default allStocksReducer;
