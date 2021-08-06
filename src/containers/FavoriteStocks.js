@@ -6,7 +6,7 @@ import Stock from '../components/Stock';
 const unfavoriteIcon = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Broken_heart.svg/586px-Broken_heart.svg.png';
 
 const FavoriteStocks = () => {
- 
+  // const favoriteRecipes = useSelector(selectFilteredFavoriteRecipes);
   const dispatch = useDispatch();
 
   const onRemoveStockHandler = (stock) => {
