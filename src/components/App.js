@@ -1,8 +1,13 @@
 import React from 'react';
+import AllStocks from '../containers/AllStocks';
 
 const App = () => {
   return (
-    <div><h1>Hello</h1></div>
+    <div>
+      <h2>Favorite Stocks</h2>
+      <h2>All Stock Index</h2>
+      <AllStocks />
+    </div>
   );
 };
 
