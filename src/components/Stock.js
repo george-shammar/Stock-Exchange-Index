@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+/* eslint-disable */
 
 const Stock = ({ stock, children }) => (
   <div key={stock.id} tabIndex={0}>
@@ -11,5 +13,10 @@ const Stock = ({ stock, children }) => (
     {children}
   </div>
 );
+
+Stock.propTypes = {
+  children: PropTypes.string.isRequired,
+  stock: PropTypes.instanceOf(Object).isRequired,
+};
 
 export default Stock;

@@ -15,4 +15,4 @@ const removeStock = (stock) => ({
   payload: stock,
 });
 
-export default { loadData, addStock, removeStock };
+export { loadData, addStock, removeStock };
