@@ -34,8 +34,17 @@ const selectFilteredFavoriteStocks = (state) => {
   return favoriteStocks.filter((stock) => stock.name.toLowerCase().includes(searchTerm.toLowerCase())); /* eslint-disable-line max-len */
 };
 
+const selectAllStocks = (state) => state.allStocks;
+
+const selectFilteredAllStocks = (state) => {
+  const allStocks = selectAllStocks(state);
+  const searchTerm = selectSearchTerm(state);
+
+  return allStocks.filter((stock) => stock.name.toLowerCase().includes(searchTerm.toLowerCase())); /* eslint-disable-line max-len */
+};
+
 export {
-  loadData, addStock, removeStock,
+  loadData, addStock, removeStock, selectAllStocks,
   selectFavoriteStocks, selectFilteredFavoriteStocks,
-  clearSearchTerm, setSearchTerm,
+  clearSearchTerm, setSearchTerm, selectFilteredAllStocks,
 };
