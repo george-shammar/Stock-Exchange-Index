@@ -10,3 +10,5 @@ const searchTermReducer = (state = initialState, action) => {
       return state;
   }
 }
+
+export default searchTermReducer;
