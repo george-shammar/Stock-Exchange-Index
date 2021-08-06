@@ -15,4 +15,15 @@ const removeStock = (stock) => ({
   payload: stock,
 });
 
-export { loadData, addStock, removeStock };
+const selectFavoriteStocks = (state) => state.favoriteStocks;
+
+const selectFilteredFavoriteStocks = (state) => {
+  const favoriteStocks = selectFavoriteStocks(state);
+  const searchTerm = selectSearchTerm(state);
+
+  return favoriteStocks.filter((stock) =>
+    stock.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+};
+
+export { loadData, addStock, removeStock, selectFavoriteStocks, selectFilteredFavoriteStocks };

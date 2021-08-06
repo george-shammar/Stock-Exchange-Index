@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeStock } from '../actions/index';
+import { removeStock, selectFilteredFavoriteStocks } from '../actions/index';
 import FavoriteButton from '../components/FavoriteButton';
 import Stock from '../components/Stock';
 
