@@ -11,4 +11,6 @@ const searchTermReducer = (state = initialState, action) => {
   }
 }
 
-export default searchTermReducer;
+const selectSearchTerm = (state) => state.searchTerm;
+
+export { searchTermReducer, selectSearchTerm };
