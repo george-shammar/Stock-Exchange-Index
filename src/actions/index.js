@@ -15,6 +15,19 @@ const removeStock = (stock) => ({
   payload: stock,
 });
 
+const setSearchTerm = (term) => {
+  return {
+    type: 'searchTerm/setSearchTerm',
+    payload: term
+  }
+}
+
+const clearSearchTerm = () => {
+  return {
+    type: 'searchTerm/clearSearchTerm'
+  }
+}
+
 const selectFavoriteStocks = (state) => state.favoriteStocks;
 
 const selectFilteredFavoriteStocks = (state) => {
@@ -26,4 +39,7 @@ const selectFilteredFavoriteStocks = (state) => {
   );
 };
 
-export { loadData, addStock, removeStock, selectFavoriteStocks, selectFilteredFavoriteStocks };
+export { loadData, addStock, removeStock, 
+  selectFavoriteStocks, selectFilteredFavoriteStocks,
+  clearSearchTerm, setSearchTerm
+};
