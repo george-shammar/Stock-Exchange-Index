@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { removeStock } from '../actions/index';
 import FavoriteButton from '../components/FavoriteButton';
 import Stock from '../components/Stock';
@@ -24,7 +24,7 @@ const FavoriteStocks = () => {
       </FavoriteButton>
     </Stock>
   );
-  // const favoriteRecipes = useSelector(selectFilteredFavoriteRecipes);
+  const favoriteStocks = useSelector(selectFilteredFavoriteStocks);
 
   return (
     <div>
