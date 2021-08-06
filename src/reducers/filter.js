@@ -1,4 +1,4 @@
-const initialState = ''
+const initialState = '';
 
 const searchTermReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -9,7 +9,7 @@ const searchTermReducer = (state = initialState, action) => {
     default:
       return state;
   }
-}
+};
 
 const selectSearchTerm = (state) => state.searchTerm;
 
