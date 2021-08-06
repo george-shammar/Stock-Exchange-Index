@@ -1,0 +1,1 @@
+import allStocksData from "../api";
