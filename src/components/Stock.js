@@ -7,8 +7,8 @@ const Stock = ({ stock, children }) => (
     {/* tabIndex={0} */}
     <span className="stock-container">
       <h3 className="stock-name">{stock.name}</h3>
-      {/* <div className="image-container">
-              <img src={recipe.img} alt="" className="recipe-image" />
+      <div className="image-container" />
+      {/* <img src={recipe.img} alt="" className="recipe-image" />
             </div> */}
     </span>
     {children}

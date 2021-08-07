@@ -7,7 +7,6 @@ import '../Index.css';
 
 const AllStocks = () => {
   const allStocks = useSelector(selectFilteredAllStocks);
-  const favoriteIcon = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuX5-hcbQJZPqRel9CryvQoc-_UQ7yg1oZIQ&usqp=CAU';
   const dispatch = useDispatch();
 
   const onFirstRender = () => {
@@ -26,9 +25,8 @@ const AllStocks = () => {
         <Stock stock={stock} key={stock.id}>
           <FavoriteButton
             onClickHandler={() => onAddStockHandler(stock)}
-            icon={favoriteIcon}
           >
-            Add to Favorites
+            Add to Watchlist
           </FavoriteButton>
         </Stock>
       ))}

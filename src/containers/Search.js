@@ -21,8 +21,8 @@ const SearchTerm = () => {
   };
 
   return (
-    <div id="search-container">
-      <img id="search-icon" alt="" src={searchIcon} />
+    <div className="search-container">
+      <img className="search-icon" alt="" src={searchIcon} />
       <input
         id="search"
         type="text"
