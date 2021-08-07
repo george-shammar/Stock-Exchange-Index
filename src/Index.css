@@ -44,7 +44,7 @@ body,
   color: #8a8e9d;
 }
 
-#search-clear-button {
+.search-clear-button {
   position: absolute;
   right: 42px;
   top: 36px;
@@ -59,6 +59,10 @@ body,
   cursor: pointer;
   display: flex;
   align-items: center;
+}
+
+.clear {
+    height: 20px;
 }
 
 .header {
