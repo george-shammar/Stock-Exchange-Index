@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-/* eslint-disable */
+import '../Index.css';
 
 const Stock = ({ stock, children }) => (
-  <div key={stock.id} tabIndex={0}>
-    <span>
-      <h3>{stock.name}</h3>
+  <div key={stock.id} className="stock">
+    {/* tabIndex={0} */}
+    <span className="stock-container">
+      <h3 className="stock-name">{stock.name}</h3>
       {/* <div className="image-container">
               <img src={recipe.img} alt="" className="recipe-image" />
             </div> */}

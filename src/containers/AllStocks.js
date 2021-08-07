@@ -7,7 +7,7 @@ import '../Index.css';
 
 const AllStocks = () => {
   const allStocks = useSelector(selectFilteredAllStocks);
-  const favoriteIcon = 'https://w7.pngwing.com/pngs/997/899/png-transparent-red-heart-illustration-heart-icon-3d-red-heart-love-heart-emoticon-thumbnail.png';
+  const favoriteIcon = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuX5-hcbQJZPqRel9CryvQoc-_UQ7yg1oZIQ&usqp=CAU';
   const dispatch = useDispatch();
 
   const onFirstRender = () => {

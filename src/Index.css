@@ -73,7 +73,7 @@ body,
   margin-bottom: 16px;
 }
 
-.recipe {
+.stock {
   padding: 16px 13px 16px 14px;
   border-radius: 6px;
   border: solid 1px #141c3a;
@@ -103,7 +103,7 @@ body,
   opacity: 0.7;
 }
 
-.recipe-name {
+.stock-name {
   font-size: 20px;
   font-weight: bold;
   margin: 0;
@@ -117,7 +117,7 @@ body,
   grid-row-gap: 12px;
 }
 
-.recipe-container {
+.stock-container {
   grid-row-start: 1;
   grid-column-start: 1;
 }

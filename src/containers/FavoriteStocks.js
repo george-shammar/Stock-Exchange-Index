@@ -5,7 +5,7 @@ import FavoriteButton from '../components/FavoriteButton';
 import Stock from '../components/Stock';
 import '../Index.css';
 
-const unfavoriteIcon = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Broken_heart.svg/586px-Broken_heart.svg.png';
+const unfavoriteIcon = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuX5-hcbQJZPqRel9CryvQoc-_UQ7yg1oZIQ&usqp=CAU';
 
 const FavoriteStocks = () => {
   const dispatch = useDispatch();
@@ -14,7 +14,6 @@ const FavoriteStocks = () => {
     dispatch(removeStock(stock));
   };
 
-  // Helper Function
   const createStockComponent = (stock) => (
     <Stock stock={stock} key={stock.id}>
       <FavoriteButton
