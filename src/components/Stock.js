@@ -8,15 +8,13 @@ const Stock = ({ stock, children }) => (
     <span className="stock-container">
       <h3 className="stock-name">{stock.name}</h3>
       <div className="image-container" />
-      {/* <img src={recipe.img} alt="" className="recipe-image" />
-            </div> */}
     </span>
     {children}
   </div>
 );
 
 Stock.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.instanceOf(Object).isRequired,
   stock: PropTypes.instanceOf(Object).isRequired,
 };
 
