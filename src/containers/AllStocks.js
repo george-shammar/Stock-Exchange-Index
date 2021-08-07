@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { addStock, loadData, selectFilteredAllStocks } from '../actions/index';
 import Stock from '../components/Stock';
 import FavoriteButton from '../components/FavoriteButton';
+import '../Index.css';
 
 const AllStocks = () => {
   const allStocks = useSelector(selectFilteredAllStocks);
@@ -20,7 +21,7 @@ const AllStocks = () => {
   };
 
   return (
-    <div>
+    <div className="stocks-container">
       {allStocks.map((stock) => (
         <Stock stock={stock} key={stock.id}>
           <FavoriteButton

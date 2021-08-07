@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { removeStock, selectFilteredFavoriteStocks } from '../actions/index';
 import FavoriteButton from '../components/FavoriteButton';
 import Stock from '../components/Stock';
+import '../Index.css';
 
 const unfavoriteIcon = 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Broken_heart.svg/586px-Broken_heart.svg.png';
 
@@ -27,7 +28,7 @@ const FavoriteStocks = () => {
   const favoriteStocks = useSelector(selectFilteredFavoriteStocks);
 
   return (
-    <div>
+    <div className="stocks-container">
       {favoriteStocks.map(createStockComponent)}
     </div>
   );
