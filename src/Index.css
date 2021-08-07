@@ -33,8 +33,9 @@ body,
 #search-icon {
   opacity: 0.5;
   position: absolute;
-  top: 42px;
+  top: 45px;
   left: 53px;
+  height: 20px;
 }
 
 #search::placeholder {
