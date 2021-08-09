@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import '../Index.css';
 
 const Stock = ({ stock, children }) => {
@@ -9,7 +10,7 @@ const Stock = ({ stock, children }) => {
       <h4 className="stock-others">{stock.name}</h4>
       <h6 className="stock-price">{stock.price}</h6>
       <h5 className="stock-others">{stock.exchange}</h5>
-      <p className="details">See details</p>
+      <Link to="/detailPage">See Statistics</Link>
       <div className="image-container" />
     </div>
     {children}
