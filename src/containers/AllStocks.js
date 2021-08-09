@@ -22,7 +22,7 @@ const AllStocks = () => {
   return (
     <div className="stocks-container">
       {allStocks.map((stock) => (
-        <Stock stock={stock} key={stock.id}>
+        <Stock stock={stock} key={stock.symbol}>
           <FavoriteButton
             onClickHandler={() => onAddStockHandler(stock)}
           >

@@ -1,12 +1,14 @@
-import { createStore, combineReducers } from 'redux';
+import { combineReducers } from 'redux';
 import allStocksReducer from './allStocksReducer';
 import favoriteStocksReducer from './favoritStocksReducer';
 import { searchTermReducer } from './filter';
 
-const store = createStore(combineReducers({
+const reducers = {
   allStocks: allStocksReducer,
   favoriteStocks: favoriteStocksReducer,
   searchTerm: searchTermReducer,
-}));
+};
 
-export default store;
+const rootReducer = combineReducers(reducers);
+
+export default rootReducer;

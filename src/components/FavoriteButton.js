@@ -4,7 +4,6 @@ import '../Index.css';
 
 const FavoriteButton = ({ children, onClickHandler }) => (
   <button className="favorite-button" type="button" onClick={onClickHandler}>
-    {/* <img className="heart-icon" alt="" src={icon} /> */}
     {children}
   </button>
 );
@@ -12,7 +11,6 @@ const FavoriteButton = ({ children, onClickHandler }) => (
 FavoriteButton.propTypes = {
   children: PropTypes.string.isRequired,
   onClickHandler: PropTypes.func.isRequired,
-  // icon: PropTypes.string.isRequired,
 };
 
 export default FavoriteButton;
