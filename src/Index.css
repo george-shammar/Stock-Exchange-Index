@@ -147,3 +147,7 @@ body,
 .app-name {
   color: green;
 }
+
+.detail {
+  cursor: pointer;
+}
