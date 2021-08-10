@@ -5,7 +5,7 @@ const favoriteStocksReducer = (favoriteStocks = initialState, action) => {
     case 'favoriteStocks/addStock':
       return [...favoriteStocks, action.payload];
     case 'favoriteStocks/removeStock':
-      return favoriteStocks.filter((stock) => stock.id !== action.payload.id);
+      return favoriteStocks.filter((stock) => stock.symbol !== action.payload.symbol);
     default:
       return favoriteStocks;
   }

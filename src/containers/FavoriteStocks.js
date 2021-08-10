@@ -6,6 +6,7 @@ import Stock from '../components/Stock';
 import '../Index.css';
 
 const FavoriteStocks = () => {
+  const favoriteStocks = useSelector(selectFilteredFavoriteStocks);
   const dispatch = useDispatch();
 
   const onRemoveStockHandler = (stock) => {
@@ -13,7 +14,7 @@ const FavoriteStocks = () => {
   };
 
   const createStockComponent = (stock) => (
-    <Stock stock={stock} key={stock.id}>
+    <Stock stock={stock} key={stock.symbol}>
       <FavoriteButton
         onClickHandler={() => onRemoveStockHandler(stock)}
       >
@@ -21,7 +22,6 @@ const FavoriteStocks = () => {
       </FavoriteButton>
     </Stock>
   );
-  const favoriteStocks = useSelector(selectFilteredFavoriteStocks);
 
   return (
     <div className="stocks-container">

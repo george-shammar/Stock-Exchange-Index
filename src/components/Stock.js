@@ -1,21 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import '../Index.css';
 
-const Stock = ({ stock, children }) => {
+const Stock = ({ stock, children }) => (
   <div key={stock.symbol} className="stock">
-    <div className="stock-container">
+    <span className="stock-container">
       <h3 className="stock-name">{stock.symbol}</h3>
       <h4 className="stock-others">{stock.name}</h4>
       <h6 className="stock-price">{stock.price}</h6>
       <h5 className="stock-others">{stock.exchange}</h5>
-      <Link to="/detailPage">See Statistics</Link>
+      {/* <Link to="/detailPage">See Statistics</Link> */}
       <div className="image-container" />
-    </div>
+    </span>
     {children}
-  </div>;
-};
+  </div>
+);
 
 Stock.propTypes = {
   children: PropTypes.instanceOf(Object).isRequired,
