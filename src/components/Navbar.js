@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom';
 import '../Index.css';
 
 const NavBar = () => (
-  <div>
+  <div className="d-flex">
     <h1 className="app-name">Stockastics</h1>
-    <div>
-      <Link to="/">Home</Link>
-    </div>
+    <Link to="/" className="mx-5 mt-3">Home</Link>
   </div>
 );
 
