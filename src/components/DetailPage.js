@@ -27,6 +27,7 @@ class DetailPage extends React.Component {
                 <p>Company Name: {doss.companyName}</p>
                 <p>Symbol:  {doss.symbol}</p>
                 <p>Price: {doss.price}</p>
+                <p>Currency {doss.currency}</p>
                 <p>Volume Average: {doss.volAvg}</p>
                 <p>Market Capitalization: {doss.mktCap}</p>
                 <p>Range: {doss.range}</p>
