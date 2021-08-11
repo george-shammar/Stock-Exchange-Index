@@ -28,13 +28,15 @@ class DetailPage extends React.Component {
                 <p>Symbol:  {doss.symbol}</p>
                 <p>Price: {doss.price}</p>
                 <p>Currency {doss.currency}</p>
+                <p>Exchange: {doss.exchange}</p>
+                <p>Exchange Shortname: {doss.exchange}</p>
                 <p>Volume Average: {doss.volAvg}</p>
                 <p>Market Capitalization: {doss.mktCap}</p>
                 <p>Range: {doss.range}</p>
                 <p>Changes: {doss.changes}</p>
-                <p>Price: {doss.price}</p>
-                <p>Price: {doss.price}</p>
-                <p>Price: {doss.price}</p>
+                <p>Industry: {doss.industry}</p>
+                <p>Website: {doss.website}</p>
+                <p>Description: {doss.description}</p>
                 <p>Price: {doss.price}</p>
                 <p>Price: {doss.price}</p>
                 <p>Price: {doss.price}</p>
