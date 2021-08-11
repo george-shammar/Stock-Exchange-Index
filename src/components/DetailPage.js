@@ -23,7 +23,7 @@ class DetailPage extends React.Component {
           && (
           <div>
             {stock.map((doss) => (
-              <div>
+              <div className="border px-5 py-5 mb-5">
                 <h5 className="d-flex">Company Name: <p className="mx-3 blue">{doss.companyName}</p></h5>
                 <h5>Logo: <img src={doss.image}></img></h5>
                 <h5 className="d-flex">Symbol: <p className="mx-3 blue">{doss.symbol}</p></h5>
