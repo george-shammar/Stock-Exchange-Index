@@ -31,18 +31,18 @@ class DetailPage extends React.Component {
                 <h5 className="d-flex">Currency: <p className="mx-3 blue">{doss.currency}</p></h5>
                 <h5 className="d-flex">Exchange: <p className="mx-3 blue">{doss.exchange}</p></h5>
                 <h5 className="d-flex">Exchange Shortname: <p className="mx-3 blue">{doss.exchangeShortName}</p></h5>
-                
-                <p>Volume Average: {doss.volAvg}</p>
-                <p>Market Capitalization: {doss.mktCap}</p>
-                <p>Range: {doss.range}</p>
-                <p>Changes: {doss.changes}</p>
-                <p>Industry: {doss.industry}</p>
-                <p>Website: {doss.website}</p>
-                <p>Description: {doss.description}</p>
-                <p>CEO: {doss.ceo}</p>
-                <p>Sector: {doss.sector}</p>
-                <p>Country: {doss.country}</p>
-                <p>No of Employees: {doss.fullTimeEmployees}</p>
+                <h5 className="d-flex">Volume Average: <p className="mx-3 blue">{doss.volAvg}</p></h5>
+                <h5 className="d-flex">Market Capitalization: <p className="mx-3 blue">{doss.mktCap}</p></h5>
+                <h5 className="d-flex">Range: <p className="mx-3 blue">{doss.range}</p></h5>
+                <h5 className="d-flex">Changes: <p className="mx-3 blue">{doss.changes}</p></h5>
+                <h5 className="d-flex">Industry: <p className="mx-3 blue">{doss.industry}</p></h5>
+                <h5 className="d-flex">Website: <p className="mx-3 blue">{doss.website}</p></h5>
+                <h5 className="d-flex">Description: <p className="mx-3 blue">{doss.description}</p></h5>
+                <h5 className="d-flex">CEO: <p className="mx-3 blue">{doss.ceo}</p></h5>
+                <h5 className="d-flex">Sector: <p className="mx-3 blue">{doss.sector}</p></h5>
+                <h5 className="d-flex">Country: <p className="mx-3 blue">{doss.country}</p></h5>
+                <h5 className="d-flex">No of Employees: <p className="mx-3 blue">{doss.fullTimeEmployees}</p></h5>
+                <h5 className="d-flex">Country: <p className="mx-3 blue">{doss.country}</p></h5>
                 <p>Phone: {doss.phone}</p>
                 <p>Address: {doss.address}</p>
                 <p>City: {doss.city}</p>
