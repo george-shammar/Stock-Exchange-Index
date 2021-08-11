@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-// import DetailPage from './DetailPage';
-// import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import '../Index.css';
 
 const Stock = ({ stock, children }) => (

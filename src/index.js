@@ -5,7 +5,6 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 // import thunk from 'redux-thunk';
 // import { composeWithDevTools } from 'redux-devtools-extension';
-// import App from './components/App';
 import rootReducer from './reducers/index';
 import Routes from './containers/Routes';
 

@@ -4,6 +4,11 @@
 //   return response.json();
 // };
 
+// export const detailStock = async () => {
+//   const response = await fetch('https://financialmodelingprep.com/api/v3/profile/AAPL?apikey=e517e7bdf90a7bed784312f134d9eab9');
+//   return response.json();
+// };
+
 const allStocksData = [
   {
     symbol: 'SYM', name: 'Biscuits', price: '4.5', exchange: 'NYSE',
