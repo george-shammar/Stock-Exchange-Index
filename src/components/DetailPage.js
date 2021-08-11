@@ -42,12 +42,11 @@ class DetailPage extends React.Component {
                 <h5 className="d-flex">Sector: <p className="mx-3 blue">{doss.sector}</p></h5>
                 <h5 className="d-flex">Country: <p className="mx-3 blue">{doss.country}</p></h5>
                 <h5 className="d-flex">No of Employees: <p className="mx-3 blue">{doss.fullTimeEmployees}</p></h5>
-                <h5 className="d-flex">Country: <p className="mx-3 blue">{doss.country}</p></h5>
-                <p>Phone: {doss.phone}</p>
-                <p>Address: {doss.address}</p>
-                <p>City: {doss.city}</p>
-                <p>State: {doss.state}</p>
-                <p>IPO Date: {doss.ipoDate}</p>
+                <h5 className="d-flex">Phone: <p className="mx-3 blue">{doss.phone}</p></h5>
+                <h5 className="d-flex">Address: <p className="mx-3 blue">{doss.address}</p></h5>
+                <h5 className="d-flex">City: <p className="mx-3 blue">{doss.city}</p></h5>
+                <h5 className="d-flex">State: <p className="mx-3 blue">{doss.state}</p></h5>
+                <h5 className="d-flex">IPO Date: <p className="mx-3 blue">{doss.ipoDate}</p></h5>
               </div>
               
             ))}
