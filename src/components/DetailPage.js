@@ -37,12 +37,12 @@ class DetailPage extends React.Component {
                 <p>Industry: {doss.industry}</p>
                 <p>Website: {doss.website}</p>
                 <p>Description: {doss.description}</p>
-                <p>Price: {doss.price}</p>
-                <p>Price: {doss.price}</p>
-                <p>Price: {doss.price}</p>
-                <p>Price: {doss.price}</p>
-                <p>Price: {doss.price}</p>
-                <p>Price: {doss.price}</p>
+                <p>CEO: {doss.ceo}</p>
+                <p>Sector: {doss.sector}</p>
+                <p>Country: {doss.country}</p>
+                <p>No of Employees: {doss.fullTimeEmployees}</p>
+                <p>Phone: {doss.phone}</p>
+                <p>Address: {doss.address}</p>
                 <p>Price: {doss.price}</p>
                 <p>Price: {doss.price}</p>
                 <p>Price: {doss.price}</p>
