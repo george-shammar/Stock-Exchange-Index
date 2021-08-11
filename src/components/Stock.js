@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+// import View from './View';
+// import DetailPage from './DetailPage';
 import '../Index.css';
 
 const Stock = ({ stock, children }) => (
