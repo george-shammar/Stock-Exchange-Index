@@ -30,7 +30,7 @@ class DetailPage extends React.Component {
                 <h5 className="d-flex">Price: <p className="mx-3 blue">{doss.price}</p></h5>
                 <h5 className="d-flex">Currency: <p className="mx-3 blue">{doss.currency}</p></h5>
                 <h5 className="d-flex">Exchange: <p className="mx-3 blue">{doss.exchange}</p></h5>
-                <h5 className="d-flex">Exchange Shortname: <p className="mx-3 blue">{doss.exchange}</p></h5>
+                <h5 className="d-flex">Exchange Shortname: <p className="mx-3 blue">{doss.exchangeShortName}</p></h5>
                 
                 <p>Volume Average: {doss.volAvg}</p>
                 <p>Market Capitalization: {doss.mktCap}</p>
