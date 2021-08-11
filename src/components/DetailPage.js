@@ -24,7 +24,8 @@ class DetailPage extends React.Component {
           <div>
             {stock.map((doss) => (
               <div>
-                <p>Company Name: {doss.companyName}</p>
+                <h5 className="d-flex">Company Name: <p className="mx-3 blue">{doss.companyName}</p></h5>
+                <h5>Logo: <img src={doss.image}></img></h5>
                 <p>Symbol:  {doss.symbol}</p>
                 <p>Price: {doss.price}</p>
                 <p>Currency {doss.currency}</p>
@@ -43,10 +44,9 @@ class DetailPage extends React.Component {
                 <p>No of Employees: {doss.fullTimeEmployees}</p>
                 <p>Phone: {doss.phone}</p>
                 <p>Address: {doss.address}</p>
-                <p>Price: {doss.price}</p>
-                <p>Price: {doss.price}</p>
-                <p>Price: {doss.price}</p>
-                <p>Price: {doss.price}</p>
+                <p>City: {doss.city}</p>
+                <p>State: {doss.state}</p>
+                <p>IPO Date: {doss.ipoDate}</p>
               </div>
               
             ))}

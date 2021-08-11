@@ -152,7 +152,6 @@ body,
   cursor: pointer;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
+.blue {
+  color: blue;
 }
