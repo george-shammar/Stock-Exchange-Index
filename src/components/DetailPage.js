@@ -24,12 +24,13 @@ class DetailPage extends React.Component {
           <div>
             {stock.map((doss) => (
               <div>
+                <p>Company Name: {doss.companyName}</p>
                 <p>Symbol:  {doss.symbol}</p>
                 <p>Price: {doss.price}</p>
                 <p>Volume Average: {doss.volAvg}</p>
                 <p>Market Capitalization: {doss.mktCap}</p>
                 <p>Range: {doss.range}</p>
-                <p>Price: {doss.price}</p>
+                <p>Changes: {doss.changes}</p>
                 <p>Price: {doss.price}</p>
                 <p>Price: {doss.price}</p>
                 <p>Price: {doss.price}</p>
