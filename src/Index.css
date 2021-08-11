@@ -151,3 +151,8 @@ body,
 .detail {
   cursor: pointer;
 }
+
+.card {
+  display: flex;
+  flex-direction: column;
+}

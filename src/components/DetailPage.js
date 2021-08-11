@@ -21,17 +21,15 @@ class DetailPage extends React.Component {
       <div className="container">
         {stock !== null && stock.length > 0
           && (
-          <span>
+          <div>
             {stock.map((doss) => (
-              <span className="card">
-                Symbol: 
-                {doss.symbol}
-                Price: 
-                {doss.price}
-              </span>
+              <div>
+                <p>Symbol:  {doss.symbol}</p>
+                <p>Price: {doss.price}</p>
+              </div>
               
             ))}
-          </span>
+          </div>
           )}
       </div>
     );
