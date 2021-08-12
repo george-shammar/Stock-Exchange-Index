@@ -1,7 +1,5 @@
 import favoriteStocksReducer from '../favoritStocksReducer';
-import { loadData, addStock, removeStock, selectAllStocks,
-    selectFavoriteStocks, selectFilteredFavoriteStocks,
-    clearSearchTerm, setSearchTerm, selectFilteredAllStocks } from '../../actions/index';
+import { loadData, addStock, removeStock } from '../../actions/index';
 
     const stock = { symbol: 'SYM', name: 'Biscuits', price: '4.5', exchange: 'NYSE',}
 
