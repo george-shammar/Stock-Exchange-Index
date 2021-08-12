@@ -59,3 +59,23 @@ import { loadData, addStock, removeStock, selectAllStocks,
         }]  
         expect(favoriteStocksReducer(previousState, removeStock(stock))).not.toEqual([stock])
     })
+
+    test('should remove the correct stock object', () => { 
+        const previousState = [{ 
+            symbol: 'SYM', 
+            name: 'Biscuits', 
+            price: '4.5', 
+            exchange: 'NYSE',
+        }]  
+        expect(favoriteStocksReducer(previousState, removeStock(stock))).toBeTruthy();
+    })
+
+    test('should remove the correct stock object', () => { 
+        const previousState = [{ 
+            symbol: 'SYM', 
+            name: 'Biscuits', 
+            price: '4.5', 
+            exchange: 'NYSE',
+        }]  
+        expect(favoriteStocksReducer(previousState, removeStock(stock))).toBeDefined()
+    })
