@@ -30,3 +30,15 @@ import { loadData, addStock, removeStock, selectAllStocks,
         const previousState = []  
         expect(favoriteStocksReducer(previousState, addStock(stock))).toBeDefined();
     });
+
+    test('should have a defined stock addition', () => { 
+        const stock = { symbol: 'SYM', name: 'Biscuits', price: '4.5', exchange: 'NYSE',}
+        const previousState = []  
+        expect(favoriteStocksReducer(previousState, addStock(stock))).toBeDefined();
+    });
+
+    test('should have a defined stock addition', () => { 
+        const stock = { symbol: 'SYM', name: 'Biscuits', price: '4.5', exchange: 'NYSE',}
+        const previousState = []  
+        expect(favoriteStocksReducer(previousState, addStock(stock))).toBeTruthy();
+    });
