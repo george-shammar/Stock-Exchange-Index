@@ -9,8 +9,9 @@ const FavoriteButton = ({ children, onClickHandler }) => (
 );
 
 FavoriteButton.propTypes = {
-  children: PropTypes.string.isRequired,
-  onClickHandler: PropTypes.func.isRequired,
+  children: PropTypes.string,
+  onClickHandler: PropTypes.func,
 };
+FavoriteButton.defaultProps = { children: '', onClickHandler: undefined };
 
 export default FavoriteButton;

@@ -4,5 +4,7 @@ exports[`renders the FavoriteButton component correctly 1`] = `
 <button
   className="favorite-button"
   type="button"
-/>
+>
+  
+</button>
 `;
