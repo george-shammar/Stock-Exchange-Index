@@ -18,7 +18,7 @@ const FavoriteStocks = () => {
       <FavoriteButton
         onClickHandler={() => onRemoveStockHandler(stock)}
       >
-        Remove from Watchlist
+        Unwatch
       </FavoriteButton>
     </Stock>
   );
