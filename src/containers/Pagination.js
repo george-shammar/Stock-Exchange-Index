@@ -75,3 +75,5 @@ function Pagination({ data, RenderComponent, title, pageLimit, dataLimit }) {
         </div>
       );
   }
+
+  export default Pagination;
