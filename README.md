@@ -17,6 +17,11 @@ Users can load all stock index data and view specific stock details. Below are s
 - Address
 - e.t.c
 
+Main Page
+![screenShot](./mainPage.png)
+
+Detail Stock Page
+![screenShot](./DetailPage.png)
 ## Built With
 - React
 - JavaScript
