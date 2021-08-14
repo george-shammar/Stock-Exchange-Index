@@ -145,7 +145,7 @@ body,
 }
 
 .app-name {
-  color: green;
+  color: rgb(13, 36, 138);
 }
 
 .detail {
@@ -158,8 +158,6 @@ body,
 
 .pagination {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .paginationItem {

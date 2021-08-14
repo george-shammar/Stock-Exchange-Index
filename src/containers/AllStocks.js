@@ -70,8 +70,7 @@ const AllStocks = () => {
             </Stock>
           ))}
 
-          <div className="pagination">
-            {/* previous button */}
+          <div className="pagination my-5">
             <button
               type="button"
               onClick={goToPreviousPage}
@@ -92,7 +91,6 @@ const AllStocks = () => {
               </button>
             ))}
 
-            {/* next button */}
             <button
               type="button"
               onClick={goToNextPage}
