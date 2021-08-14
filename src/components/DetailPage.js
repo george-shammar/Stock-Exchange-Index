@@ -10,7 +10,7 @@ class DetailPage extends React.Component {
   }
 
   componentDidMount() {
-    const symbol = 'AAPL';
+    const symbol = 'CMCSA';
     fetch(`https://financialmodelingprep.com/api/v3/profile/${symbol}?apikey=e517e7bdf90a7bed784312f134d9eab9`)
       .then((resp) => resp.json())
       .then((json) => this.setState({ stock: json }));

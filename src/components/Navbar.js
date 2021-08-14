@@ -4,7 +4,7 @@ import '../Index.css';
 
 const NavBar = () => (
   <div className="d-flex mb-3 border">
-    <h1 className="app-name">Stockastics</h1>
+    <h1 className="app-name">Stock Exchange Index</h1>
     <Link to="/" className="mx-5 btn btn-outline-primary">Home</Link>
   </div>
 );

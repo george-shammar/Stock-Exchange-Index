@@ -1,4 +1,4 @@
-# Stockistics
+# Stock Exchange Index
 
 This is a web application that reports real-time statistics of the stock market based on https://financialmodelingprep.com/ API. 
 
