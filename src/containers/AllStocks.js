@@ -50,50 +50,56 @@ const AllStocks = () => {
   dataLimit = 35;
   const startIndex = currentPage * dataLimit - dataLimit;
   const endIndex = startIndex + dataLimit;
-
+  const stockArray = allStocks.slice(startIndex, endIndex);
   return (
-    <div className="stocks-container">
-      {allStocks.slice(startIndex, endIndex).map((stock) => (
-        <Stock stock={stock} key={stock.symbol}>
-          <FavoriteButton
-            onClickHandler={() => onAddStockHandler(stock)}
-          >
-            Add to Watchlist
-          </FavoriteButton>
-        </Stock>
-      ))}
+    <div>
+      {stockArray.length > 0 ? (
+        <div className="stocks-container">
+          {stockArray.map((stock) => (
+            <Stock stock={stock} key={stock.symbol}>
+              <FavoriteButton
+                onClickHandler={() => onAddStockHandler(stock)}
+              >
+                Add to Watchlist
+              </FavoriteButton>
+            </Stock>
+          ))}
 
-      <div className="pagination">
-        {/* previous button */}
-        <button
-          type="button"
-          onClick={goToPreviousPage}
-          className={`prev ${currentPage === 1 ? 'disabled' : ''}`}
-        >
-          prev
-        </button>
+          <div className="pagination">
+            {/* previous button */}
+            <button
+              type="button"
+              onClick={goToPreviousPage}
+              className={`prev ${currentPage === 1 ? 'disabled' : ''}`}
+            >
+              prev
+            </button>
 
-        {/* show page numbers */}
-        {getPaginationGroup().map((item) => (
-          <button
-            type="button"
-            key={item}
-            onClick={changePage}
-            className={`paginationItem ${currentPage === item ? 'active' : null}`}
-          >
-            <span>{item}</span>
-          </button>
-        ))}
+            {/* show page numbers */}
+            {getPaginationGroup().map((item) => (
+              <button
+                type="button"
+                key={item}
+                onClick={changePage}
+                className={`paginationItem ${currentPage === item ? 'active' : null}`}
+              >
+                <span>{item}</span>
+              </button>
+            ))}
 
-        {/* next button */}
-        <button
-          type="button"
-          onClick={goToNextPage}
-          className={`next ${currentPage === pages ? 'disabled' : ''}`}
-        >
-          next
-        </button>
-      </div>
+            {/* next button */}
+            <button
+              type="button"
+              onClick={goToNextPage}
+              className={`next ${currentPage === pages ? 'disabled' : ''}`}
+            >
+              next
+            </button>
+          </div>
+        </div>
+      ) : (
+        <p className="mx-5 my-5 px-5 py-5"> Loading your stock data...</p>
+      )}
     </div>
   );
 };
