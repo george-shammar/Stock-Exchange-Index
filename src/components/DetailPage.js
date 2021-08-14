@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Index.css';
-/* eslint-disable */
+
 class DetailPage extends React.Component {
   constructor(props) {
     super(props);
@@ -8,9 +8,10 @@ class DetailPage extends React.Component {
       stock: null,
     };
   }
-  
+
   componentDidMount() {
-    fetch('https://financialmodelingprep.com/api/v3/profile/AAPL?apikey=e517e7bdf90a7bed784312f134d9eab9')
+    const symbol = 'AAPL';
+    fetch(`https://financialmodelingprep.com/api/v3/profile/${symbol}?apikey=e517e7bdf90a7bed784312f134d9eab9`)
       .then((resp) => resp.json())
       .then((json) => this.setState({ stock: json }));
   }
@@ -23,7 +24,7 @@ class DetailPage extends React.Component {
           && (
           <div>
             {stock.map((doss) => (
-              <div className="border rounded-3 px-5 py-5 mb-5">
+              <div key={stock} className="border rounded-3 px-5 py-5 mb-5">
                 <h5 className="d-flex">
                   Company Name:
                   <p className="mx-3 blue">{doss.companyName}</p>

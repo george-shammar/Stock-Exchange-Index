@@ -1,11 +1,6 @@
 import allStocksData from '../api';
 import { selectSearchTerm } from '../reducers/filter';
 
-// const loadData = () => ({
-//   type: 'allStocks/loadData',
-//   payload: allStocksData,
-// });
-
 const loadData = () => async (dispatch) => {
   const payload = await allStocksData();
   dispatch({ type: 'allStocks/loadData', payload });
