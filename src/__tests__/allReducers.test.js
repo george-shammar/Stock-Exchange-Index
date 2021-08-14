@@ -1,4 +1,4 @@
-import allStocksReducer from '../allStocksReducer';
+import allStocksReducer from '../reducers/allStocksReducer';
 
 test('should return the initial state', () => {
   expect(allStocksReducer(undefined, {})).toEqual([]);

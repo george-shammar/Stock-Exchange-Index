@@ -1,5 +1,5 @@
-import favoriteStocksReducer from '../favoritStocksReducer';
-import { addStock, removeStock } from '../../actions/index';
+import favoriteStocksReducer from '../reducers/favoritStocksReducer';
+import { addStock, removeStock } from '../actions/index';
 
 const stock = {
   symbol: 'SYM', name: 'Biscuits', price: '4.5', exchange: 'NYSE',
