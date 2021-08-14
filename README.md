@@ -22,6 +22,10 @@ Main Page
 
 Detail Stock Page
 ![screenShot](./DetailPage.png)
+
+## Live Demo
+[Deployed app](https://musing-spence-c94175.netlify.app/)
+
 ## Built With
 - React
 - JavaScript
