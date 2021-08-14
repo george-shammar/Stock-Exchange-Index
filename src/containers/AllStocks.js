@@ -51,6 +51,11 @@ const AllStocks = () => {
   const startIndex = currentPage * dataLimit - dataLimit;
   const endIndex = startIndex + dataLimit;
   const stockArray = allStocks.slice(startIndex, endIndex);
+
+  useEffect(() => {
+    window.scrollTo({ behavior: 'smooth', top: '0px' });
+  }, [currentPage]);
+
   return (
     <div>
       {stockArray.length > 0 ? (
