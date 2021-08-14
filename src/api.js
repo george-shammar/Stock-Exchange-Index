@@ -1,4 +1,4 @@
-import "regenerator-runtime/runtime.js";
+import 'regenerator-runtime/runtime';
 
 const key = 'e517e7bdf90a7bed784312f134d9eab9';
 
