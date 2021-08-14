@@ -1,3 +1,5 @@
+import "regenerator-runtime/runtime.js";
+
 const key = 'e517e7bdf90a7bed784312f134d9eab9';
 
 const allStocksData = async () => {
