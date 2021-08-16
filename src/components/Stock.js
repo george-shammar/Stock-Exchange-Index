@@ -26,8 +26,8 @@ const Stock = ({ stock, children }) => {
 };
 
 Stock.propTypes = {
-  children: PropTypes.instanceOf(Object).isRequired,
+  children: PropTypes.instanceOf(Object),
   stock: PropTypes.instanceOf(Object).isRequired,
 };
-
+Stock.defaultProps = { children: undefined };
 export default Stock;
