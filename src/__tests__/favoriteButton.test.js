@@ -9,16 +9,18 @@ it('renders the FavoriteButton component correctly', () => {
 });
 
 it('renders the FavoriteButton component correctly with props', () => {
-    const tree = renderer.create(<FavoriteButton onClickHandler={() => console.log("stock")}/>).toJSON();
-    expect(tree).toMatchSnapshot();
+  const favorite = () => 'Stock';
+  const tree = renderer.create(<FavoriteButton onClickHandler={() => favorite()} />).toJSON();
+  expect(tree).toMatchSnapshot();
 });
 
 it('renders FavoriteButton without crashing', () => {
   const div = document.createElement('div');
 
   ReactDom.render(
-      <FavoriteButton />, 
-  div);
+    <FavoriteButton />,
+    div,
+  );
 
   ReactDom.unmountComponentAtNode(div);
 });
