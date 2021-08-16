@@ -66,6 +66,14 @@ npm start
 ```
 - The application will open up in your browser.
 
+## Tests
+
+- To run the tests, in the command line interface, type 
+```
+npm test
+```
+
+
 ## Developer
 
 👤 **George Gbenle**
