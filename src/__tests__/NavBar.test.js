@@ -1,6 +1,3 @@
-// import React from 'react';
-// import NavBar from '../components/Navbar';
-
 import React from 'react';
 import ReactDom from 'react-dom';
 import NavBar from '../components/Navbar';
@@ -19,7 +16,7 @@ it('renders NavBar without crashing', () => {
   ReactDom.unmountComponentAtNode(div);
 });
 
-it('renders the AllStocks component correctly', () => {
+it('renders the NavBar component correctly', () => {
   const tree = renderer.create(<BrowserRouter>
     <NavBar />
   </BrowserRouter>).toJSON();
