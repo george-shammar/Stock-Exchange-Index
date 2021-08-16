@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import App from '../components/App';
-import DetailPage from '../components/DetailPage';
-import NavBar from '../components/Navbar';
+import App from './App';
+import DetailPage from './DetailPage';
+import NavBar from './Navbar';
 
 const Routes = () => (
   <BrowserRouter>
