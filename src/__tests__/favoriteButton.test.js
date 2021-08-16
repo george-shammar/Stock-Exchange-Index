@@ -7,7 +7,7 @@ it('renders the FavoriteButton component correctly', () => {
   expect(tree).toMatchSnapshot();
 });
 
-it('renders the FavoriteButton component correctly', () => {
+it('renders the FavoriteButton component correctly with props', () => {
     const tree = renderer.create(<FavoriteButton onClickHandler={() => console.log("stock")}/>).toJSON();
     expect(tree).toMatchSnapshot();
-  });
+});
