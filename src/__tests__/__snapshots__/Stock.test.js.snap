@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the NavBar component correctly 1`] = `
+<div
+  className="stock"
+>
+  <span
+    className="stock-container"
+  >
+    <h3
+      className="stock-name"
+    >
+      Sym
+    </h3>
+    <h4
+      className="stock-others"
+    >
+      Apple
+    </h4>
+    <h6
+      className="stock-price"
+    >
+      13.0
+    </h6>
+    <h5
+      className="stock-others"
+    >
+      NASDAQ
+    </h5>
+    <a
+      className="view mt-3"
+      href="/DetailPage"
+      onClick={[Function]}
+    >
+      <p>
+        View Details
+      </p>
+    </a>
+  </span>
+</div>
+`;
+
+exports[`renders the Stock component correctly 1`] = `
+<div
+  className="stock"
+>
+  <span
+    className="stock-container"
+  >
+    <h3
+      className="stock-name"
+    >
+      Sym
+    </h3>
+    <h4
+      className="stock-others"
+    >
+      Apple
+    </h4>
+    <h6
+      className="stock-price"
+    >
+      13.0
+    </h6>
+    <h5
+      className="stock-others"
+    >
+      NASDAQ
+    </h5>
+    <a
+      className="view mt-3"
+      href="/DetailPage"
+      onClick={[Function]}
+    >
+      <p>
+        View Details
+      </p>
+    </a>
+  </span>
+</div>
+`;

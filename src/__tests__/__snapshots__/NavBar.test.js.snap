@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the AllStocks component correctly 1`] = `
+<div
+  className="d-flex mb-3 border"
+>
+  <h1
+    className="app-name"
+  >
+    Stochastics
+  </h1>
+  <a
+    className="mx-5 btn btn-outline-primary"
+    href="/"
+    onClick={[Function]}
+  >
+    Home
+  </a>
+</div>
+`;
+
+exports[`renders the NavBar component correctly 1`] = `
+<div
+  className="d-flex mb-3 border"
+>
+  <h1
+    className="app-name"
+  >
+    Stochastics
+  </h1>
+  <a
+    className="mx-5 btn btn-outline-primary"
+    href="/"
+    onClick={[Function]}
+  >
+    Home
+  </a>
+</div>
+`;
